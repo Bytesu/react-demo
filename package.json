@@ -4,7 +4,8 @@
   "description": "react demo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
   },
   "keywords": [
     "react"
@@ -12,6 +13,11 @@
   "author": "byte_su@163.com",
   "license": "ISC",
   "dependencies": {
+    "babel-core": "^6.2.1",
+    "babelify": "^7.2.0",
+    "body-parser": "^1.14.1",
+    "browser": "^0.2.6",
+    "express": "^4.13.3",
     "react": "^0.14.3",
     "react-dom": "^0.14.3"
   }
