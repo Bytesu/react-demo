@@ -28,12 +28,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/api/comments', function(req, res) {
+    conosole.log('A')
     fs.readFile(COMMENTS_FILE, function(err, data) {
         if (err) {
             console.error(err);
             process.exit(1);
         }
         res.setHeader('Cache-Control', 'no-cache');
+        //console.log(JSON.stringify(data));
         res.json(JSON.parse(data));
     });
 });
